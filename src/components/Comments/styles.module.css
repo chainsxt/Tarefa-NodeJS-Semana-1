@@ -1,0 +1,107 @@
+
+/* Container principal do comentário */
+.container {
+    display: flex;
+    max-width: 842px;    /* ALTERADO: De width para max-width para ser responsivo */
+    width: 100%;
+    min-height: 100px;
+    opacity: 1;
+    gap: 20px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+
+    padding:20px;
+    flex-wrap: wrap;
+
+
+}
+
+.subtitulo{
+    width: 88px;
+    height: 17px;
+    color: #9999;
+}
+
+/* Estilização da imagem de perfil */
+.img img {
+    width: 62px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    outline: 2px solid #029367; /* Cor verde de destaque comum nesse layout */
+}
+
+/* Caixa de conteúdo (fundo escuro) */
+.info {
+    flex: 1;
+    min-width: 700px;
+    background: #1C1C2F;
+    border-radius: 8px;
+    padding: 1rem;
+    position: relative; /* Necessário para posicionar a lixeira *     /* Força a quebra de qualquer sequência de texto */
+    word-break: break-word; /* Garante que palavras longas quebrem para a próxima linha */
+    max-width: 760px;
+
+}
+
+.info strong {
+    display: block;
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+.info p {
+    margin-top: 1rem;
+    color: #c4c4cc;
+    font-size: 0.875rem;
+}
+
+/* Botão de excluir (lixeira) */
+.botaoExcluir {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: transparent;
+    border:0;
+    color: #8d8d99;
+    cursor: pointer;
+    line-height: 0;
+    border-radius: 2px;
+    transition: color 0.1s;
+
+}
+
+
+.botaoExcluir img {
+    width: 24px;
+    height: 24px;
+}
+
+.botaoLike {
+    background: transparent;
+    border: 0;
+    color: #8d8d99;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 0.875rem;
+    transition: color 0.1s;
+    
+    margin-top: 0.5rem;
+    margin-left: 0;
+    padding: 0.25rem 0;
+}
+
+.botaoLike:hover {
+    color: #00b37e;
+}
+
+.botaoLike img {
+    margin-right: 0.5rem;
+    width: 20px;
+}
+
+.botaoLike span {
+    margin-left: 0.5rem;
+}

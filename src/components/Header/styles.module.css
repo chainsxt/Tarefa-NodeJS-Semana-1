@@ -1,0 +1,30 @@
+.header{
+    width: 100%;
+    height: 100px;
+    margin-top: 0;
+    background-color: #0E0E1B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.componentes {
+  display: flex;
+  align-items: center;
+  gap: 16px; 
+}
+
+.logo {
+  height: 40px;
+}
+
+.title {
+  color:#036FDB;
+  font-size: 64px;
+  font-weight: 500;
+  font-family: 'Barlow', sans-serif;
+  width:138px;
+  height:67px;
+  line-height: 1;
+}
